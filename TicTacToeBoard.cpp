@@ -13,8 +13,8 @@ void TicTacToeBoard::toggleTurn()
 //Constructor sets an empty board and specifies it is X's turn first
 TicTacToeBoard::TicTacToeBoard()
 {
-	board = Blank;
-	if(board = Blank)
+	board[3][3] = Blank;
+	if(board[3][3] = Blank)
 	{
 		turn = X;
 	}
@@ -24,7 +24,7 @@ TicTacToeBoard::TicTacToeBoard()
 //Resets each board location to the Blank Piece value
 void TicTacToeBoard::clearBoard()
 {
-	board = Blank;
+	board[3][3] = Blank;
 	return;
 }
 
